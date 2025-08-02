@@ -13,7 +13,6 @@ public class UserService {
     @Autowired
     private JwtUtil jwtUtil;
     private final BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
-
     public String registerUser(User user) {
         if (userRepo.findByEmail(user.getEmail()).isPresent()) {
             return "Email already exists";

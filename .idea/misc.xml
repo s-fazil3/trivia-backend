@@ -6,6 +6,7 @@
       <list>
         <option value="$PROJECT_DIR$/couponmanager/couponmanager/pom.xml" />
         <option value="$PROJECT_DIR$/couponmanager/trivia-app/pom.xml" />
+        <option value="$PROJECT_DIR$/trivia-quiz/trivia-app/pom.xml" />
       </list>
     </option>
   </component>

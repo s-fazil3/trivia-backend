@@ -44,7 +44,6 @@ public class jwtfilter extends OncePerRequestFilter {
                 System.out.println("JWT validation failed: " + ex.getMessage());
             }
         }
-
         filterChain.doFilter(request, response);
     }
 }

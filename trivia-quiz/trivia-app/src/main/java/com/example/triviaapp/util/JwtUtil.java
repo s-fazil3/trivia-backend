@@ -11,13 +11,11 @@ import java.security.Key;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
-
 @Component
 public class JwtUtil {
 
     private final Key key = Keys.hmacShaKeyFor("bL9xN2mZ8pQsW7vXe3TkY5rAjcLfG1oB".getBytes());
     private final long EXPIRATION_TIME = 1000L * 60 * 60 * 24 * 30;
-
     public String generateToken(String email,String name) {
         Map<String, Object> claims = new HashMap<>();
         claims.put("email", email);
@@ -50,7 +48,6 @@ public class JwtUtil {
                 .build()
                 .parseClaimsJws(token)
                 .getBody();
-
         return claims.getSubject();
     }
 }
