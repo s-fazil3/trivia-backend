@@ -11,7 +11,7 @@
 	<groupId>com.example</groupId>
 	<artifactId>trivia-app</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>couponmanager</name>
+	<name>trivia</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
